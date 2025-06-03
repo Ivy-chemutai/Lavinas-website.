@@ -1,3 +1,11 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+    const btn = document.querySelector('.toggle-theme');
+    if (document.body.classList.contains('dark')) {
+      btn.textContent = ':sunny: Light Mode';
+    } else {
+      btn.textContent = ':crescent_moon: Dark Mode';
+    }
+  }
+</script>
